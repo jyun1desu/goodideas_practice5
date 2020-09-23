@@ -1,0 +1,15 @@
+$icons:
+0 "facebook" 0px,
+1 "twitter" -37px,
+2 "flickr" -74px,
+3 "dribble" -111px,
+4 "rss" -150px;
+
+$hover: 27px;
+
+@mixin sprite($icon_position) {
+    background-position: $icon_position 0;
+            &:hover {
+                background-position: $icon_position $hover;
+            }
+}
